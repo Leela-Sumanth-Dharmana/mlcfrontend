@@ -1,0 +1,116 @@
+.cont {
+    display: flex;
+    box-shadow: 1px 1px 5px 5px rgb(160, 226, 254);
+    align-items: center;
+    margin: 7% auto;
+    /* Instead of specifying margins for each side, use auto for left and right to center horizontally */
+    padding: 20px;
+    /* Add padding for better spacing */
+    max-width: 900px;
+    /* Limit maximum width to prevent the content from becoming too wide */
+    background: rgb(49, 71, 59);
+    background: linear-gradient(177deg, rgba(49, 71, 59, 1) 1%, rgba(179, 202, 222, 1) 5%);
+}
+
+.div1 {
+    flex: 1;
+    /* Make div1 flexible to occupy available space */
+}
+
+.div2 {
+    flex: 1;
+    /* Make div2 flexible to occupy available space */
+    padding: 0 20px;
+    /* Add padding for better spacing */
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    /* On small screens, switch to column layout */
+}
+
+.img-container {
+    text-align: center;
+    /* Center the image */
+}
+
+.img-container img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+@media (min-width: 768px) {
+
+    /* Apply styles for medium and larger screens */
+    .row {
+        flex-direction: row;
+        /* Switch back to row layout */
+    }
+
+    .div1 {
+        padding-right: 20px;
+        /* Add right padding for separation */
+    }
+
+    .div2 {
+        padding-left: 20px;
+        /* Add left padding for separation */
+    }
+}
+
+body {
+    /* background-image: linear-gradient(#60EFFF, #0061FF); */
+    background-image: linear-gradient(#60EFFF, #0061FF);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.box1 {
+    align-items: center;
+    justify-content: center;
+    background-image: url("scene.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    height:75%;
+}
+.letter-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-family: 'Arial', sans-serif;
+}
+
+.letter-header,
+.letter-footer {
+    text-align: center;
+}
+
+.letter-body {
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.white-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    /* Remove default underline style for links */
+    /* margin-right: 10px; */
+    /* Add any additional styling as needed */
+}
+
+.white-link:hover{
+    color: black;
+    text-decoration: none;
+}
